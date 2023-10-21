@@ -1,0 +1,47 @@
+html, body {
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Readex Pro", sans-serif;
+}
+
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#screen {
+  --statusbar-height: 4rem;
+  --statusbar-padding-left: 3rem;
+  --statusbar-padding-right: 3rem;
+  --software-buttons-height: 4rem;
+  --screen-radius: 3.6rem;
+  --chrome-toolbar-gap: 0.5rem;
+  --chrome-tablist-height: 4rem;
+  --chrome-navbar-height: 4rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #00240c, rgb(0, 26, 42)) , url(/resources/wallpapers/default.png) no-repeat center / cover;
+  
+}
+
+#screen ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+#screen ::-webkit-scrollbar-thumb {
+  background-color: #858585;
+  background-clip: content-box;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  width: 8px;
+  height: 8px;
+}
