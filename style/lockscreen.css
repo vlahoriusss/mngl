@@ -22,7 +22,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, #00240c, rgb(0, 26, 42)) , url(/resources/wallpapers/default.png) no-repeat center / cover;
+  background: linear-gradient(to bottom, #00240c, rgb(0, 26, 42)) , url(/mngl/default.png) no-repeat center / cover;
   transform: scale(calc(1 + (0.125 * (1 - (1 - var(--motion-progress, 1))))));
 }
 

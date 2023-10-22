@@ -20,10 +20,13 @@
   <link rel="stylesheet" href="style/keyboard.css">
   <link rel="stylesheet" href="style/software_buttons.css">
   <link rel="stylesheet" href="style/lockscreen.css">
+  <link rel="stylesheet" href="style/search.css">
+  <link rel="stylesheet" href="style/websites.css">
   <script src="js/bootstrap.js"></script>
   <script defer src="js/splashscreen.js"></script>
   <script defer src="js/event_listener.js"></script>
   <script defer src="js/time_icon.js"></script>
+  <script defer src="js/cards_view.js"></script>
   <script defer src="js/battery_icon.js"></script>
   <script defer src="js/data_icon.js"></script>
   <script defer src="js/network_icon.js"></script>
@@ -39,6 +42,9 @@
   <script defer src="js/lockscreen/motion.js"></script>
   <script defer src="js/lockscreen/clock.js"></script>
   <script defer src="js/lockscreen/date.js"></script>
+  <script defer src="js/homescreen_launcher.js"></script>
+  <script defer src="js/websites.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 <body>
   <div id="screen" class="software-buttons-enabled">
@@ -98,7 +104,7 @@
           <div id="lockscreen-charging"></div>
         </div>
       </div>
-      <div class="lockscreen-hint">Swipe Up To Unlock</div>
+      <div class="lockscreen-hint">Swipe To Unlock</div>
     </div>
 
     <div id="utility-tray">
@@ -202,7 +208,25 @@
       <button id="software-keyboard-button"></button>
 
       <div id="dock"></div>
-    </div>
+      <div id="screen" class="software-buttons-enabled">
+  <!-- Localization -->
+  <script src="/js/l10n.js"></script>
+  <meta name="defaultLanguage" content="en-US">
+  <meta name="availableLanguages" content="en-US, af, ga, sq, it, ar, ja, az, kn, eu, ko, bn, la, be, lv, bg, lt, ca, mk, zh, ms, mt, hr, no, cs, fa, da, pl, nl, pt, ro, eo, ru, et, sr, tl, sk, fi, sl, fr, es, gl, sw, ka, sv, de, ta, el, te, gu, th, ht, tr, uk, hi, ur, hu, vi, is, cy, id, yi">
+  <link rel="localization" href="locales/widgets.{locale}.properties">
+</head>
+<body>
+  <div class="background"></div>
+  <header id="header">
+    <img src="/images/logo.png" alt="" class="brandlogo">
+    <form action="" id="searchbox">
+      <input type="text" data-l10n-id="type-here-to-search" id="searchbox-input">
+      <button type="reset" data-icon="close"></button>
+    </form>
+    <div id="websites"></div>
+  </header>
+  <div id="widgets">
+    <div id="widgets-news"></div>
   </div>
 </body>
 </html>

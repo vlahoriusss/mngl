@@ -1,0 +1,55 @@
+  
+  #websites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    width: calc(100% - 1.5rem);
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  
+  #websites > a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border-radius: 1rem;
+  }
+  
+  #websites > a:hover {
+    background: var(--translucent);
+  }
+  
+  #websites > a:active {
+    background: var(--translucent-plus);
+  }
+  
+  #websites > a .icon-holder {
+    width: 100%;
+    padding: 1rem 0;
+    box-sizing: border-box;
+  }
+  
+  #websites > a .icon-holder img {
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+    display: block;
+    background: var(--background-plus);
+    border-radius: 25%;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  }
+  
+  #websites > a .name {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    text-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
+  }
+
+  #utility-tray {
+    visibility: visible;
+  }

@@ -1,5 +1,5 @@
 :root {
-  --accent-color: #0061e0;
+  --accent-color: #00e0d1;
   --accent-color-plus: rgba(255, 255, 255, 0.75);
   --accent-color-hover: rgba(255, 255, 255, 0.05);
   --accent-color-active: rgba(255, 255, 255, 0.1);
@@ -30,7 +30,7 @@
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --accent-color: #80c2ff;
+    --accent-color: #80ffc2;
     --accent-color-plus: rgba(0, 0, 0, 0.75);
     --accent-color-hover: rgba(0, 0, 0, 0.05);
     --accent-color-active: rgba(0, 0, 0, 0.1);
